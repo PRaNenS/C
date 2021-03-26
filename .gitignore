@@ -1,0 +1,5 @@
+# Visual Studio 2019 files
+Debug
+*.vcxproj
+*.filters
+*.user
