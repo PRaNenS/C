@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main(void)
+int main_loop(void)
 {
 	printf("Hello World\n");
 
@@ -54,6 +54,48 @@ int main(void)
 	for (int x = 1; x <= 5; x++)
 	{
 		for (int y = 1; y <= x; y++)
+		{
+			printf("*");
+		}
+		printf("\n");
+	}
+
+	/*
+		     *
+			**
+		   ***
+		  ****
+		 *****
+	*/
+	for (int x = 0; x < 5; x++)
+	{
+		for (int y = x; y < 5 - 1; y++)
+		{
+			printf(" ");
+		}
+		for (int y = 0; y <= x; y++)
+		{
+			printf("*");
+		}
+		printf("\n");
+	}
+
+	/* ÇÇ¶ó¹Ìµå¸¦ ½×¾Æ¶ó
+	    *
+	   ***
+	  *****
+	 *******
+	*/
+	int floor;
+	printf("¸î ÃþÀ¸·Î ½×°Ú´Â°¡? >");
+	scanf_s("%d", &floor);
+	for (int x = 0; x < floor; x++)
+	{
+		for (int y = x; y < floor - 1; y++)
+		{
+			printf(" ");
+		}
+		for (int y = 0; y < x * 2 + 1 ; y++)
 		{
 			printf("*");
 		}
