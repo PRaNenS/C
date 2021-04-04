@@ -4,7 +4,7 @@ void swap(int a, int b);
 void swap_addr(int* a, int* b);
 void changeArray(int* ptr);
 
-int main(void)
+int main_pointer(void)
 {
 	// 포인터(가리킨다 즉, 자체의 값이 어디를 가리키는 것)
 	// [철수] : 101호
